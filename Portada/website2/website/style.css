@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    color: #000;
+    position: relative;
+  }
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+.logo{
+    width: 75px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color : #000;
+    font-size: 1.2em;
+     transition: 0.2s;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #634caf;
+}
+
+.btn{
+    border: 2px solid #000;
+    padding: 6px 25px;
+    border-radius: 30px;
+    margin-left: 30px;
+    transition: 0.2s all;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.btn:hover{
+    border: 2px solid #8b4caf;
+    background: #8b4caf;
+    color: white;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 100%; */
+    justify-content: space-between;
+}
+
+.col-1{
+    flex-basis: 35%;
+    min-width: 300px;
+    margin-bottom: 30px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.col-1 img{
+    width: 100%;
+}
+
+.col-2 h1{
+    font-size: 2.2em;
+    font-weight: 600px;
+}
+
+span{
+    color: #8b4caf;
+}
+
+.col-2 p{
+    margin: 10px 0 50px;
+    max-width: 580px;
+}
+
+.col-2 a{
+    padding: 10px 20px;
+    background: #8b4caf;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+@keyframes up-down{
+ 0%{
+     transform: translateY(10px);
+ }
+ 100%{
+     transform: translateY(-10px);
+ }
+}
+
+form,#aprende{
+    display: inline;
+}
+.diamond {
+    width: 80px; 
+    height: 80px; 
+    background: #6d69a8;
+    margin: 3px 0 0 30px;
+    position: absolute;
+    top: 7%;
+    left: 27%;
+    z-index: -1;
+    /* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+ }
+
+.active{
+    color: #000;
+}
+
+.active:hover{
+    border-bottom: 2px solid #4caf50;
+}

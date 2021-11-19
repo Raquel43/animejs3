@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <script src="anime.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Login Form Animation</title>
+</head>
+<body>
+  <div class="page">
+    <div class="login-form" id="js-login-form">
+      <p class="form-title">tu cuenta</p>
+      <form action="javascript:void 0" onsubmit= "send()">
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" id="js-email">
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" id="js-password">
+        </div>
+        <p class="forgot-password"><a href="">¿Olvidaste tu contraseña?</a></p>
+        <div class="submit">
+          <input type="submit" value="Login">
+          <input type="text" id="volver" value="volver">
+          <div class="spinner js-spinner"></div>
+        </div>
+      </form>
+      <footer>
+        <p>¿No tienes cuenta?</p>
+        <p>
+          <a href="">Crea una cuenta</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
